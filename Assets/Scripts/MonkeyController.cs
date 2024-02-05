@@ -45,7 +45,7 @@ public class MonkeyController : MonoBehaviour
     private void CheckLength()
     {
         float direction = (_needle - transform.position).magnitude;
-        if (direction <= 4)
+        if (direction <= 10)
         {
             _isStopped = true;
             _rb.velocity = Vector3.zero;
